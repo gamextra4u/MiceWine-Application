@@ -11,7 +11,7 @@ import java.io.File
 import kotlin.math.abs
 
 object WineWrapper {
-    private var IS_BOX64 = if (Build.SUPPORTED_ABIS[0] == "x86_64") "" else "box64"
+    private var IS_BOX64 = if (Build.SUPPORTED_ABIS[0] == "x86_64") "" else ""
 
     fun getCpuHexMask(): String {
         val availCpus = Runtime.getRuntime().availableProcessors()
